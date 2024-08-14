@@ -110,7 +110,7 @@ body {
 
 @keyframes slideInLeft {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-15%);
         opacity: 0;
     }
     to {
@@ -147,7 +147,7 @@ body {
 .vertical-line {
     width: 2px;             /* Thickness of the line */
     height: 200px;          /* Height of the line */
-    background-color: #ccc; /* Color of the line */
+    background-color: #000000; /* Color of the line */
     margin: 0 20px;         /* Space on either side of the line */
     animation: slideInBottom 1s ease-out;
 }
@@ -156,11 +156,14 @@ body {
     max-width: 600px;       /* Limit the width of the paragraphs section */
     font-size: 16px;        /* Font size for the text */
     line-height: 1.5;       /* Line height for better readability */
+    animation: slideInLeft 1s ease-out;
 }
+
+
 
 @keyframes slideInBottom {
     0% {
-        transform: translateY(100%); /* Start below the viewport */
+        transform: translateY(500%); /* Start below the viewport */
         opacity: 0; /* Start invisible */
     }
     100% {

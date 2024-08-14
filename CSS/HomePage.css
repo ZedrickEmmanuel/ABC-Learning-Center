@@ -12,20 +12,20 @@ body {
     align-items: center; 
     padding: 0 20px; 
     background-color: transparent; 
-    animation: slideIn 1s ease-out; /* Animation for sliding in the navbar */
+    animation: slideIn 1s ease-out; 
 }
 
 .logo {
     height: 100px; 
     margin-right: 20px; 
     cursor: pointer;
-    animation: slideInLeft 1s ease-out; /* Animation for sliding in the logo */
+    animation: slideInLeft 1s ease-out; 
 }
 
 .navbar .cta {
     margin-left: auto;
     position: relative;
-    animation: slideInRight 1s ease-out; /* Animation for sliding in the button */
+    animation: slideInRight 1s ease-out; 
 }
 
 .navbar ul {
@@ -33,7 +33,7 @@ body {
     display: flex; 
     margin: 0;
     padding: 0;
-    animation: slideInRight 1s ease-out; /* Animation for sliding in the links */
+    animation: slideInRight 1s ease-out; 
 }
 
 .navbar li {
@@ -132,8 +132,42 @@ body {
 
 /*--------------------END---------------*/
 
-.Image-Hooman{
-    margin-top:  70px;
-    margin-left: 160px;
+.content-container {
+    display: flex;          /* Align children horizontally */
+    align-items: center;    /* Center items vertically */
+    padding: 20px;          /* Add some padding around the container */
 }
+
+.Image-Hooman {
+    margin-right: 30px;     /* Space between image and vertical line */
+    animation: slideInLeft 1s ease-out;
+    margin-left: 110px;
+}
+
+.vertical-line {
+    width: 2px;             /* Thickness of the line */
+    height: 200px;          /* Height of the line */
+    background-color: #ccc; /* Color of the line */
+    margin: 0 20px;         /* Space on either side of the line */
+    animation: slideInBottom 1s ease-out;
+}
+
+.paragraph-section {
+    max-width: 600px;       /* Limit the width of the paragraphs section */
+    font-size: 16px;        /* Font size for the text */
+    line-height: 1.5;       /* Line height for better readability */
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%); /* Start below the viewport */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateY(0); /* End at the original position */
+        opacity: 1; /* End fully visible */
+    }
+}
+
+
 

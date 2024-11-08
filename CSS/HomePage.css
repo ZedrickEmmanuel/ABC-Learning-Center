@@ -349,6 +349,90 @@ body {
 }
 
 
+/*---------------------------FOOTER SECTION---------------------------------*/
+/* Footer Styling */
+footer {
+    background-color: #133E87;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    max-width: 1200px;
+    color: white;
+    position: relative;
+}
+
+/* Footer Buttons on the left */
+.footer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.footer-button {
+    background-color: #222831; /* New default background color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+    background-color: #393E46; /* New hover background color */
+}
+
+/* Center paragraph with vertical line */
+.vertical-line {
+    height: 100px;
+    width: 2px;
+    background-color: white;
+    margin: 0 20px;
+}
+
+.paragraph-section h3 {
+    font-size: 1em;
+    color: white;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Social Media Links on the right */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0056b3;
+}
+
+
+
+
 
 
 

@@ -388,6 +388,7 @@ footer {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    animation: slideInRight 1s ease-out; 
 }
 
 .footer-button:hover {

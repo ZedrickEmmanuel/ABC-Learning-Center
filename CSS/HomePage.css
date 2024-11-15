@@ -353,78 +353,92 @@ body {
 /* Footer Styling */
 footer {
     background-color: #2c3e50;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    padding: 10px 0; /* Reduced padding */
+    color: white;
+    text-align: center;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    width: 40%;
     max-width: 1200px;
-    color: white;
-    position: relative;
+    margin: 0 auto;
 }
 
-/* Footer Buttons on the left */
-.footer-buttons {
+.footer-icons {
+    display: flex;
+    gap: 10px; /* Reduced space between icons */
+    margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+.footer-icons img {
+    width: 20px; /* Reduced icon size */
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Horizontal Line Styling */
+.horizontal-line-footer {
+    height: 1px; /* Reduced thickness of the line */
+    width: 70%;  /* Reduced width of the line */
+    background-color: #FFFFFF;
+    margin: 10px 0; /* Reduced top and bottom margin */
+}
+
+/* Center Content Styling */
+.center-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    align-items: center;
+    margin-bottom: 10px; /* Reduced bottom margin */
 }
 
-.footer-button {
-    background-color: #222831; /* New default background color */
+.footer-logo {
+    width: 60px; /* Reduced logo size */
+    margin-bottom: 5px; /* Reduced bottom margin */
+}
+
+/* Footer Links Styling */
+.footer-links {
+    display: flex;
+    gap: 15px; /* Reduced space between links */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li a {
     color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    cursor: pointer;
     text-decoration: none;
     font-weight: bold;
+    padding: 3px 8px; /* Reduced padding for a smaller button feel */
+    border-radius: 3px; /* Slightly reduced border radius */
     transition: background-color 0.3s ease;
-    animation: slideInRight 1s ease-out; 
+    font-size: 0.9em; /* Reduced font size */
 }
 
-.footer-button:hover {
-    background-color: #393E46; /* New hover background color */
+.footer-links li a:hover {
+    background-color: #555; /* Darker shade on hover */
+    text-decoration: underline; /* Underline only on hover */
 }
 
-/* Center paragraph with vertical line */
-.vertical-line-footer {
-    height: 100px;
-    width: 2px;
-    background-color: white;
-    margin: 0 20px;
-    animation: slideInTop 1s ease-out forwards;
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-icons,
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.paragraph-section h3 {
-    font-size: 1em;
-    color: white;
-    max-width: 400px;
-    text-align: center;
-}
-
-/* Social Media Links on the right */
-.footer-social {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    .footer-links {
+        gap: 8px;
+    }
 }
 
 
-.social-icon:hover {
-    color: #0056b3;
-}
+
+
 
 
 
